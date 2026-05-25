@@ -9,7 +9,7 @@ The master resume feeds a separate downstream JD-tailoring agent. This tool keep
 ## Installation
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Katherine-Deborah/resume-tracker.git
 cd automated-resume-tracker
 pip install -e .
 ```
