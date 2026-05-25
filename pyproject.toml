@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resume-tracker"
+version = "0.1.0"
+description = "Local CLI tool to track project progress and sync resume bullets"
+requires-python = ">=3.10"
+dependencies = [
+    "watchdog>=4.0",
+    "schedule>=1.2",
+    "pyyaml>=6.0",
+    "colorama>=0.4.6",
+]
+
+[project.scripts]
+tracker = "resume_tracker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["resume_tracker*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
